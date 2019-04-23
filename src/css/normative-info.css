@@ -1,0 +1,47 @@
+.normative-info {
+  margin-bottom: -2px;
+}
+.normative-info__item,
+.normative-info__item:link,
+.normative-info__item:visited,
+.normative-info__item:focus {
+  display: block;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #f3f5f6;
+  color: #2b74a1;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.13px;
+  text-decoration: none;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  padding: 12px 50px 12px 54px;
+  margin-bottom: 2px;
+}
+.normative-info__item:before,
+.normative-info__item:link:before,
+.normative-info__item:visited:before,
+.normative-info__item:focus:before {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 100%;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #b48d4c;
+  background-image: url(../img/icon-normative-info.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.normative-info__item:hover {
+  background-color: #eaeaea;
+}
