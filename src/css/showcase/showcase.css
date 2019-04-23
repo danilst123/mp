@@ -1,0 +1,10 @@
+.showcase {
+  background-image: -webkit-gradient(linear, left top, right top, from(#264071), to(#347095));
+  background-image: -webkit-linear-gradient(left, #264071, #347095);
+  background-image: -o-linear-gradient(left, #264071, #347095);
+  background-image: linear-gradient(to right, #264071, #347095);
+}
+.showcase .container {
+  min-height: 355px;
+  background-image: url(../img/hero-logo.png);
+}
