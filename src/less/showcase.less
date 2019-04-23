@@ -1,0 +1,40 @@
+.showcase {
+	background-image: url(../img/hero-bg.png), linear-gradient(to right, #264071, #347095);
+	background-repeat: no-repeat, repeat;
+	background-position: right calc(50% - 385px) top 0, top 0 left 0;
+	
+	.container {
+		min-height: 385px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		background-image: url(../img/hero-logo.png);
+		background-repeat: no-repeat;
+		background-position: right 45px center;
+		padding: 50px 0;
+	}
+
+	&__title {
+		max-width: 745px;
+		color: #ffffff;
+		font-family: "Open Sans", sans-serif;
+		font-size: 28px;
+		font-weight: 700;
+		line-height: 36px;
+		letter-spacing: -0.28px;
+		margin-bottom: 20px;
+	}
+
+	&__text {
+		max-width: 795px;
+		color: #a3cbeb;
+		font-family: "Open Sans", sans-serif;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 24px;
+	}
+
+	&__search {
+		margin-top: 35px;
+	}
+}
