@@ -1,24 +1,21 @@
-.information-resources {
+.usefull-links {
 	display: flex;
-	flex-wrap: wrap;
-	margin-bottom: -20px;
 
 	&__item {
-		height: 112px;
 		display: flex;
-		width: calc(100%/3 - 14px);
+		height: 112px;
+		width: calc(50% - 10px);
 		box-shadow: 0 2px 4px rgba(26, 26, 26, 0.08);
 		border-radius: 5px;
 		border: 1px solid #e4e4e4;
 		background-color: #ffffff;
-		margin-bottom: 20px;
-		&:not(:nth-child(3n)) {
+		&:not(:last-child) {
 			margin-right: 20px;
 		}
 	}
 
 	&__img {
-		width: 116px;
+		width: 186px;
 		height: 100%;
 		position: relative;
 
@@ -37,13 +34,12 @@
 		display: flex;
 		align-items: center;
 		height: 100%;
-		width: calc(100% - 116px);
+		width: calc(100% - 186px);
 		color: #262626;
 		font-family: "Open Sans", sans-serif;
-		font-size: 13px;
+		font-size: 14px;
 		font-weight: 600;
-		line-height: 18px;
-		letter-spacing: -0.13px;
-		padding: 10px 13px;
+		line-height: 22px;
+		padding: 22px;
 	}
 }

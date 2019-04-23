@@ -1,0 +1,70 @@
+.docs-counter {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 373px;
+	box-shadow: 0 2px 4px rgba(26, 26, 26, 0.08);
+	border-radius: 5px;
+	border: 1px solid #e4e4e4;
+	background-color: #f3f5f6;
+	padding: 10px 30px;
+
+	&--incolumn {
+		margin-top: 27px;
+	}
+
+	&__count {
+		display: flex;
+		align-items: center;
+		&--total {
+			padding-bottom: 35px;
+			border-bottom: 1px solid #cecece;
+			margin-bottom: 25px;
+			strong {
+				color: #b48d4c;
+				font-family: "Open Sans", sans-serif;
+				font-size: 68px;
+				font-weight: 700;
+				line-height: 1;
+			}
+		}
+
+		&--inprogress {
+			&:not(:last-child) {
+				margin-bottom: 20px;
+			}
+			strong {
+				display: inline-block;
+				vertical-align: middle;
+				color: #8c8c8c;
+				font-family: "Open Sans", sans-serif;
+				font-size: 48px;
+				font-weight: 700;
+				line-height: 1;
+			}
+			img {
+				display: inline-block;
+				vertical-align: middle;
+				margin-right: 20px;
+			}
+		}
+	}
+
+	&__number {
+		width: 50%;
+		text-align: right;
+		padding-right: 8px;
+	}
+
+	&__text {
+		width: 50%;
+		text-align-last: auto;
+		color: #262626;
+		font-family: "Open Sans", sans-serif;
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 20px;
+		letter-spacing: -0.16px;
+		padding-left: 8px;
+	}
+}

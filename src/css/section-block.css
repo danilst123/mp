@@ -45,6 +45,16 @@
   padding: 0 23px;
   margin-top: -20px;
 }
+.section-block__columns {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
 .section-block__link,
 .section-block__link:link,
 .section-block__link:visited,
