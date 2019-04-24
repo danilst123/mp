@@ -1,6 +1,9 @@
 .normative-info {
   margin-bottom: -2px;
 }
+.normative-info--incolumn {
+  width: 738px;
+}
 .normative-info__item,
 .normative-info__item:link,
 .normative-info__item:visited,

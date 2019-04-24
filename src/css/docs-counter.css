@@ -12,14 +12,14 @@
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 373px;
+  width: 370px;
   -webkit-box-shadow: 0 2px 4px rgba(26, 26, 26, 0.08);
   box-shadow: 0 2px 4px rgba(26, 26, 26, 0.08);
   -webkit-border-radius: 5px;
   border-radius: 5px;
   border: 1px solid #e4e4e4;
   background-color: #f3f5f6;
-  padding: 10px 30px;
+  padding: 20px 30px;
 }
 .docs-counter--incolumn {
   margin-top: 27px;
