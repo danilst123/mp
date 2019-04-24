@@ -357,6 +357,7 @@ body {
   border-radius: 5px;
   border: 1px solid #e4e4e4;
   background-color: #ffffff;
+  text-decoration: none;
 }
 .information-services__item:not(:nth-child(3n)) {
   margin-right: 20px;
@@ -392,6 +393,7 @@ body {
   font-size: 13px;
   font-weight: 600;
   line-height: 18px;
+  text-decoration: none;
   padding: 10px 14px;
 }
 .usefull-links {
@@ -414,6 +416,7 @@ body {
   border-radius: 5px;
   border: 1px solid #e4e4e4;
   background-color: #ffffff;
+  text-decoration: none;
 }
 .usefull-links__item:not(:last-child) {
   margin-right: 20px;
@@ -449,6 +452,7 @@ body {
   font-size: 14px;
   font-weight: 600;
   line-height: 22px;
+  text-decoration: none;
   padding: 22px;
 }
 .normative-docs {
