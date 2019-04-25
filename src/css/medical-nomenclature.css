@@ -23,13 +23,19 @@
   align-items: center;
   text-align: center;
   background-image: url(../img/nomenclature-bg.png);
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-position: center;
   background-color: #2671a1;
   padding: 30px;
 }
+@media screen and (max-width: 1219px) {
+  .medical-nomenclature__link {
+    width: 100%;
+  }
+}
 .medical-nomenclature__title {
   width: 100%;
+  max-width: 360px;
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;

@@ -4,6 +4,11 @@
 .normative-info--incolumn {
   width: 738px;
 }
+@media screen and (max-width: 1219px) {
+  .normative-info--incolumn {
+    width: 100%;
+  }
+}
 .normative-info__item,
 .normative-info__item:link,
 .normative-info__item:visited,
