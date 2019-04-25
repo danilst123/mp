@@ -3,13 +3,23 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: -20px;
+}
+@media screen and (max-width: 1219px) {
+  .information-services {
+    display: block;
+    margin-bottom: -15px;
+  }
 }
 .information-services__item {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 112px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: -webkit-calc(100%/3 - 14px);
   width: calc(100%/3 - 14px);
   -webkit-box-shadow: 0 2px 4px rgba(26, 26, 26, 0.08);
@@ -19,14 +29,82 @@
   border: 1px solid #e4e4e4;
   background-color: #ffffff;
   text-decoration: none;
+  margin-bottom: 20px;
 }
 .information-services__item:not(:nth-child(3n)) {
   margin-right: 20px;
 }
+@media screen and (max-width: 1219px) {
+  .information-services__item {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .information-services__item:not(:nth-child(3n)) {
+    margin-right: 0;
+  }
+}
+.information-services__item:nth-of-type(3n - 2) .information-services__img:before {
+  background-image: url(../img/information-services-bg-1.png);
+}
+@media screen and (max-width: 767px) {
+  .information-services__item:nth-of-type(3n - 2) .information-services__img:before {
+    display: none;
+  }
+}
+.information-services__item:nth-of-type(3n - 1) .information-services__img:before {
+  background-image: url(../img/information-services-bg-2.png);
+}
+@media screen and (max-width: 767px) {
+  .information-services__item:nth-of-type(3n - 1) .information-services__img:before {
+    display: none;
+  }
+}
+.information-services__item:nth-of-type(3n) .information-services__img:before {
+  background-image: url(../img/information-services-bg-3.png);
+}
+@media screen and (max-width: 767px) {
+  .information-services__item:nth-of-type(3n) .information-services__img:before {
+    display: none;
+  }
+}
 .information-services__img {
   width: 156px;
-  height: 100%;
+  height: 110px;
   position: relative;
+}
+@media screen and (max-width: 767px) {
+  .information-services__img {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 90px;
+    height: auto;
+    min-height: 80px;
+  }
+}
+.information-services__img:before {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .information-services__img img {
   height: auto;
@@ -34,19 +112,23 @@
   max-width: 100%;
   max-height: 100%;
   position: absolute;
-  top: 0;
-  right: 0;
+  z-index: 2;
+  top: 50%;
+  left: 20px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+@media screen and (max-width: 767px) {
+  .information-services__img img {
+    max-width: 70px;
+    position: static;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
 }
 .information-services__text {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  height: 100%;
   width: -webkit-calc(100% - 156px);
   width: calc(100% - 156px);
   color: #262626;
@@ -56,4 +138,14 @@
   line-height: 18px;
   text-decoration: none;
   padding: 10px 14px;
+}
+@media screen and (max-width: 767px) {
+  .information-services__text {
+    width: -webkit-calc(100% - 90px);
+    width: calc(100% - 90px);
+    padding: 15px;
+    padding-left: 5px;
+    font-size: 12px;
+    line-height: 15px;
+  }
 }

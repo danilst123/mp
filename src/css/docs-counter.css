@@ -75,6 +75,11 @@
   font-weight: 700;
   line-height: 1;
 }
+@media screen and (max-width: 767px) {
+  .docs-counter__count--total strong {
+    font-size: 60px;
+  }
+}
 .docs-counter__count--inprogress:not(:last-child) {
   margin-bottom: 20px;
 }
@@ -91,6 +96,11 @@
   font-size: 48px;
   font-weight: 700;
   line-height: 1;
+}
+@media screen and (max-width: 767px) {
+  .docs-counter__count--inprogress strong {
+    font-size: 40px;
+  }
 }
 .docs-counter__count--inprogress img {
   display: inline-block;
@@ -138,5 +148,7 @@
   .docs-counter__text {
     width: 100%;
     margin-top: 10px;
+    font-size: 14px;
+    line-height: 18px;
   }
 }
