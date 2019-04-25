@@ -12,6 +12,9 @@
 ::-moz-focus-inner {
   border: 0;
 }
+select::-ms-expand {
+  display: none;
+}
 html,
 body {
   min-width: 320px;
