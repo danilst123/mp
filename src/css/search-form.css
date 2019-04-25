@@ -3,7 +3,8 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 599px;
+  width: 100%;
+  max-width: 600px;
   height: 45px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
