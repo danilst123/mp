@@ -1,0 +1,63 @@
+.toggle-section {
+  -webkit-box-shadow: 0 2px 4px rgba(26, 26, 26, 0.08);
+  box-shadow: 0 2px 4px rgba(26, 26, 26, 0.08);
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #e4e4e4;
+  background-color: #ffffff;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.toggle-section:last-of-type {
+  margin-bottom: 0;
+}
+.toggle-section__head {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 70px;
+  background-color: #354568;
+  background-image: url(../img/section-toggle-pic.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  padding: 23px 22px 23px 50px;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  position: relative;
+}
+.toggle-section__head:before {
+  content: '';
+  display: block;
+  width: 16px;
+  height: 17px;
+  background-image: url(../img/icon-chevrons.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  position: absolute;
+  top: 27px;
+  left: 22px;
+}
+.toggle-section__head--closed:before {
+  -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+}
+.toggle-section__body {
+  padding: 20px 22px;
+}
+@media screen and (max-width: 413px) {
+  .toggle-section__body {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
