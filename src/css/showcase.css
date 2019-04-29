@@ -81,6 +81,7 @@
 }
 .showcase--infoservices .container {
   min-height: 190px;
+  height: 190px;
   background: none;
   padding-top: 15px;
   padding-bottom: 15px;
