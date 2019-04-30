@@ -328,6 +328,14 @@
 				.toggleClass('toggle-section__head--closed')
 				.next().slideToggle(400);
 		});
+
+		$(window).resize(function () {
+			console.log('123123');
+		});
+
+		$(document).on('webkitfullscreenchange, mozfullscreenchange, fullscreenchange', function(e) {
+		    console.log('фывфыв');
+		});
 	});
 </script>
 </body>

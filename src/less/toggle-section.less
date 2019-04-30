@@ -18,7 +18,10 @@
 		background-image: url(../img/section-toggle-pic.png);
 		background-repeat: no-repeat;
 		background-position: top right;
-		padding: 23px 22px 23px 50px;
+		padding-top: 23px;
+		padding-bottom: 23px;
+		padding-left: 50px;
+		padding-right: 80px;
 		color: #ffffff;
 		font-family: "Open Sans", sans-serif;
 		font-size: 18px;
@@ -26,6 +29,12 @@
 		line-height: 24px;
 		position: relative;
 		cursor: pointer;
+
+		@media screen and (max-width: 413px) {
+			padding-top: 15px;
+			padding-bottom: 15px;
+			padding-left: 40px;
+		}
 
 		&:before {
 			content: '';
@@ -39,13 +48,16 @@
 			position: absolute;
 			top: 27px;
 			left: 22px;
+
+			@media screen and (max-width: 413px) {
+				top: 20px;
+				left: 15px;
+			}
+
 		}
 
 		&--closed:before {
 			transform: rotateX(180deg);
-		}
-
-		@media screen and (max-width: 413px) {
 		}
 	}
 
